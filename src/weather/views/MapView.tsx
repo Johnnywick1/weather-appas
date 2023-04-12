@@ -33,7 +33,7 @@ export const MapView: Component = () => {
           state.location.lat
         }&lon=${state.location.lon}&detailLat=${state.location.lat}&detailLon=${
           state.location.lon
-        }&zoom=9&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=${windMetric()}&metricTemp=%C2%B0${
+        }&zoom=9&level=surface&overlay=temp&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=${windMetric()}&metricTemp=%C2%B0${
           state.settings.temperature === "Celsius" ? "C" : "F"
         }&radarRange=-1`}
       />
